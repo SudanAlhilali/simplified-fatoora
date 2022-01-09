@@ -13,7 +13,7 @@
     "dev": "nodemon src/server.ts",
     "build": "rm -rf dist && tsc",
     "start": "node dist/server.js",
-    "herokou-postbuidl":"cd client && npm install && npm run build",
+    "herokou-postbuild":"cd client && npm install && npm run build",
     "test": "jest",
     "lint": "eslint src",
     "format": "eslint src --fix",
