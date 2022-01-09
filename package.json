@@ -12,7 +12,7 @@
     "setup": "npm install",
     "dev": "nodemon src/server.ts",
     "build": "rm -rf dist && tsc",
-    "start": " rm -rf dist && tsc && node dist/server.js",
+    "start": "node dist/server.js",
     "herokou-postbuidl":"cd client && npm install && npm run build",
     "test": "jest",
     "lint": "eslint src",
