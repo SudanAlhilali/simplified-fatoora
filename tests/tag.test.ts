@@ -1,4 +1,4 @@
-import { renderTags, Tag, tagsToBase64, toBase64, toHex, toTlv } from '../src';
+import { Tag, tagsToBase64, toBase64, toHex, toTlv } from '../src';
 import { Buffer } from 'buffer';
 
 test('tagsToBase64() generates a valid base64 string from tags', () => {
