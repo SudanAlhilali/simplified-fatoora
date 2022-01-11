@@ -21,7 +21,7 @@
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
-    "prepare": "npm run build",
+    "prepare": "husky install",
     "publish": "npm publish --access public"
   },
   "author": "Sudan Alhilali",
