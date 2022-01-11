@@ -70,14 +70,16 @@ var parsedWordArray = CryptoJS.enc.Base64.parse(base64);
 var parsedStr = parsedWordArray.toString(CryptoJS.enc.Utf8);
 // console.log("parsed:", parsedStr);
 
-let items = parsedStr.replace(/(\u0001+\u0019)/gi, "/")
+let items = parsedStr.replace(/\u0019/gi, "/")
                  .replace(/\u0002/gi,"/")
+                 .replace(/\u0001/gi,"/")
                  .replace(/\u000f/gi,"/")
                  .replace(/\u0010/gi,"/")
                  .replace(/\u0003/gi,"/")
                  .replace(/\u0006/gi,"/")
                  .replace(/\u0004/gi,"/")
                  .replace(/\u0005/gi,"/")
+                 .replace(/\u000c/gi,"/")
                  .split('/').filter((el) => {return el !== null && typeof el !== 'undefined' && el !== ''});
 
     return (
