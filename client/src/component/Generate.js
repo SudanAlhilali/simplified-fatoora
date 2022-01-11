@@ -80,6 +80,8 @@ let items = parsedStr.replace(/\u0019/gi, "/")
                  .replace(/\u0004/gi,"/")
                  .replace(/\u0005/gi,"/")
                  .replace(/\u000c/gi,"/")
+                 .replace(/\u0014/gi,"/")
+                 .replace(/\u001e/gi,"/")
                  .split('/').filter((el) => {return el !== null && typeof el !== 'undefined' && el !== ''});
 
     return (
